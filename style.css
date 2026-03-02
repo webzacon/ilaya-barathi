@@ -114,6 +114,56 @@ width: 100%;
 }
 
 /* hero */
+/* Container for the Hero section */
+.hero-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem 10%;
+  min-height: 80vh;
+  flex-wrap: wrap; /* Allows items to drop to next line */
+}
+
+/* Left side: Text content */
+.hero-text {
+  flex: 1;
+  min-width: 300px;
+  text-align: left;
+}
+
+/* Right side: Image content */
+.hero-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 300px;
+}
+
+.hero-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 20px; /* To match your image style */
+}
+
+/* --- MOBILE VIEW --- */
+@media (max-width: 768px) {
+  .hero-container {
+    flex-direction: column-reverse; /* Puts text below image on mobile */
+    text-align: center;
+    padding: 2rem 5%;
+  }
+
+  .hero-text {
+    text-align: center;
+    margin-top: 2rem;
+  }
+  
+  .hero-text h1 {
+    font-size: 2rem;
+  }
+}
+
 
 .hero {
 
